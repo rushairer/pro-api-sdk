@@ -1,9 +1,9 @@
 {
 	"name": "pro-api-sdk",
-	"uuid": "",
+	"uuid": "3fe953a6ec20435985b04c88d653bbb8",
 	"displayName": "PRO API SDK",
 	"description": "嘉立创EDA & EasyEDA 专业版扩展 API 开发工具",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "JLCEDA <support@lceda.cn>",
 	"engines": {
 		"eda": "^2.3.0"
@@ -14,7 +14,7 @@
 		"url": ""
 	},
 	"categories": "Other",
-	"keywords": ["SDK"],
+	"keywords": ["SDK", "AI", "扣子"],
 	"images": {
 		"logo": "./images/logo.png"
 	},
@@ -26,9 +26,14 @@
 	"headerMenus": {
 		"home": [
 			{
-				"id": "API SDK",
-				"title": "API SDK",
+				"id": "CozeAI",
+				"title": "扣子AI助手",
 				"menuItems": [
+					{
+						"id": "OpenPanel",
+						"title": "打开AI助手",
+						"registerFn": "openCozePanel"
+					},
 					{
 						"id": "About",
 						"title": "About...",
@@ -39,9 +44,14 @@
 		],
 		"sch": [
 			{
-				"id": "API SDK",
-				"title": "API SDK",
+				"id": "CozeAI",
+				"title": "扣子AI助手",
 				"menuItems": [
+					{
+						"id": "OpenPanel",
+						"title": "打开AI助手",
+						"registerFn": "openCozePanel"
+					},
 					{
 						"id": "About",
 						"title": "About...",
@@ -52,9 +62,14 @@
 		],
 		"pcb": [
 			{
-				"id": "API SDK",
-				"title": "API SDK",
+				"id": "CozeAI",
+				"title": "扣子AI助手",
 				"menuItems": [
+					{
+						"id": "OpenPanel",
+						"title": "打开AI助手",
+						"registerFn": "openCozePanel"
+					},
 					{
 						"id": "About",
 						"title": "About...",
