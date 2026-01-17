@@ -3,8 +3,8 @@
  * 负责与扣子AI平台进行HTTP通信
  */
 import type { CozeCommand } from '../types/command';
-import type { EDAContext, UserConfigContext } from '../types/context';
-import type { ConversationMessage, CozeApiMessage, CozeApiResponse } from '../types/conversation';
+import type { EDAContext } from '../types/context';
+import type { ConversationMessage, CozeApiMessage } from '../types/conversation';
 
 /**
  * 扣子API服务配置
@@ -264,7 +264,7 @@ export class CozeApiService {
 				JSON.stringify({
 					bot_id: this.config.botId,
 					user_id: 'eda_plugin_test',
-					stream: false,
+					stream: true,
 					auto_save_history: false,
 					additional_messages: [
 						{

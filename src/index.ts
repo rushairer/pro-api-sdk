@@ -25,9 +25,8 @@ let messageSubscription: any = null; // MessageBus订阅任务
 /**
  * 插件激活函数
  * 当插件加载时由嘉立创EDA系统调用
- * @param _api - EDA提供的API对象（当前项目使用全局eda对象，此参数保留以符合规范）
  */
-export function activate(_api: any): void {
+export function activate(): void {
 	console.log('[CozeAI] Activating plugin...');
 
 	// 初始化服务
@@ -57,6 +56,8 @@ export function activate(_api: any): void {
  */
 export async function openCozePanel(): Promise<void> {
 	try {
+		activate();
+
 		console.log('[CozeAI] Opening panel...');
 
 		// 检查是否已有打开的面板
